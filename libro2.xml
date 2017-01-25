@@ -1,0 +1,8 @@
+<libreria>
+	<libro libro_id="7" autor="Cervantes" titulo="El quijote" ejemplares="10" />
+	<libro libro_id="8" autor="Tolkien" titulo="El señor de los anillos" ejemplares="15" />
+	<libro libro_id="9" autor="J.K.Rowlin" titulo="Harry Potter" ejemplares="20" />
+	<libro libro_id="10" autor="Bruce" titulo="Born to run" ejemplares="10" />
+	<libro libro_id="11" autor="Sue Ishida" titulo="Tokyo Ghoul" ejemplares="25" />
+	<libro libro_id="12" autor="Desconocido" titulo="Diario de un Desconocido" ejemplares="1" />
+</libreria>

@@ -1,0 +1,23 @@
+<libreria>
+	<libro libro_id="13" autor="Cervantes" titulo="El quijote" ejemplares="10" />
+	<libro>
+		<libro_id>14</libro_id>
+		<autor>Tolkien</autor>
+		<titulo>El señor de los anillos</titulo>
+		<ejemplares>15</ejemplares>
+	</libro>	
+	<libro libro_id="15" autor="J.K.Rowlin" titulo="Harry Potter" ejemplares="20"/>	
+	<libro>
+		<libro_id>17/libro_id>
+		<autor>Bruce</autor>
+		<titulo>Born to run</titulo>
+		<ejemplares>10</ejemplares>
+	</libro>
+	<libro libro_id="17" autor="Sue Ishida" titulo="Tokyo Ghoul" ejemplares="25" />
+	<libro>
+		<libro_id>18</libro_id>
+		<autor>Desconocido</autor>
+		<titulo>Diario de un desconocido</titulo>
+		<ejemplares>19</ejemplares>
+	</libro>
+</libreria>
