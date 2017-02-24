@@ -2,6 +2,10 @@ DROP DATABASE Club_náutico;
 CREATE DATABASE Club_náutico;
 USE Club_náutico;
 
+
+
+
+
 CREATE TABLE Socios(
 CI_socios INT PRIMARY KEY AUTO_INCREMENT,
 Fecha_ingreso DATE NOT NULL,
