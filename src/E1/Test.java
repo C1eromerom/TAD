@@ -1,11 +1,9 @@
 package E1;
-import miLibreria.Entrada;
 
 public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Entrada entrada = new Entrada();
 		ListaSimple lista = new ListaSimple();
 		Nodo a = new Nodo(1);
 		lista.setInicio(a);

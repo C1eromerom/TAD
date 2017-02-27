@@ -160,7 +160,7 @@ public class ListaSimple {
 
 	}
 	
-	public void eleminarTodos(Nodo n){
+	public void eliminarTodos(Nodo n){
 		
 		Nodo aux = buscarTodos(n).getInicio();
 		while(aux!=null){
