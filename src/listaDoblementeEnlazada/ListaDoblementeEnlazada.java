@@ -41,7 +41,7 @@ public class ListaDoblementeEnlazada {
 	}
 	
 	public String toString2() {
-		String salida = tamaño + " elementos";
+		String salida = tamaño + " elementos\n";
 		Nodo auxiliar = cola;
 		while (auxiliar != null) {
 			salida = salida + auxiliar.toString() + "";
@@ -130,6 +130,7 @@ public class ListaDoblementeEnlazada {
 				}
 				nodoAuxiliar.getDerecha().setIzquierda(null);;
 				nodoAuxiliar.setDerecha(null);
+				setCola(nodoAuxiliar);
 			}
 			tamaño--;
 			return true;
@@ -153,7 +154,7 @@ public class ListaDoblementeEnlazada {
 					posicion--;
 				}
 				nodoAnterior.setDerecha(nodoAEliminar.getDerecha());
-				nodoAEliminar.setIzquierda(nodoAnterior);
+				nodoAEliminar.getDerecha().setIzquierda(nodoAnterior);
 				this.tamaño--;
 				return true;
 			}

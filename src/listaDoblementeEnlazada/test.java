@@ -23,12 +23,12 @@ public class test {
 		lista.insertarCabeza(d);
 		lista.insertarCabeza(e);
 		System.out.println(lista.toString());
-		lista.insertarFinal(new Nodo(4));
+		lista.insertarFinal(new Nodo(0));
 		System.out.print("Insertar final\n");
 		System.out.println(lista.toString());
 		
-		lista.insertar(new Nodo(5),3);
-		System.out.print("Insertar nodo \"5\" en posición 3\n");
+		lista.insertar(new Nodo(3),3);
+		System.out.print("Insertar nodo \"3\" en posición 3\n");
 		System.out.println(lista.toString());
 		
 		lista.eliminarPrimero();
@@ -43,7 +43,7 @@ public class test {
 		System.out.print("Eliminar posición 3\n");
 		System.out.println(lista.toString());
 		
-		System.out.print("Lista invertida");
+		System.out.print("Lista invertida\n");
 		System.out.println(lista.toString2());
 	
 
