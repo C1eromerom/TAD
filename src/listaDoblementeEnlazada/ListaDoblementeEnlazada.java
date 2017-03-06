@@ -64,17 +64,15 @@ public class ListaDoblementeEnlazada {
 	}
 	
 	public void insertarFinal(Nodo nodo) {
-		if (cabeza == null)
-			insertarCabeza(nodo);
-		else {
-			Nodo actual = cabeza;
-			while (actual.getDerecha() != null) {
-				actual = actual.getDerecha();
-			}
-			actual.setDerecha(nodo);
-			nodo.setIzquierda(actual);
+		if(cola == null){
+			cabeza=nodo;
 			cola=nodo;
-			this.tamaño++;
+			tamaño++;
+		}else{
+		nodo.setIzquierda(cola);
+		cola.setDerecha(nodo);
+		cola = nodo;
+		tamaño++;
 		}
 	}
 	
@@ -116,27 +114,16 @@ public class ListaDoblementeEnlazada {
 	}
 	
 	public boolean eliminarUltimo() {
-		if (cabeza == null)
+		if (cola == null)
 			return false;
 		else {
-			if (tamaño == 1)
-				cabeza = null;
-			else {
-				Nodo nodoAuxiliar = cabeza;
-				int posicionAuxiliar = 1;
-				while (posicionAuxiliar < this.tamaño - 1) {
-					nodoAuxiliar = nodoAuxiliar.getDerecha();
-					posicionAuxiliar++;
-				}
-				nodoAuxiliar.getDerecha().setIzquierda(null);;
-				nodoAuxiliar.setDerecha(null);
-				setCola(nodoAuxiliar);
-			}
+			cola = cola.getIzquierda();
+			cola.setDerecha(null);
 			tamaño--;
 			return true;
 		}
-
 	}
+
 	
 	public boolean eliminar(int posicion) {
 		if (posicion <= 0 || posicion > tamaño)
